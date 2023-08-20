@@ -202,7 +202,7 @@
                 </div>
             </div>
             <!-- cart part  -->
-            <div class="w-full md:w-full lg:w-1/4">
+            <div class="w-full md:w-full lg:w-1/4 mt-14">
                 <div class="shadow-sm p-3">
                     <h3 class="font-medium mb-3">Have coupon?</h3>
                     <input type="text" placeholder="Coupon code" name="" class="rounded-tl-lg rounded-bl-lg px-2 py-2 inline border w-40" id="">
@@ -218,7 +218,18 @@
                     <p>Discount: <span>00.00</span> TK</p>
                     <p>Total: <span>00.00</span> TK</p>
                     <hr>
-                    <button class="py-2 px-5 mt-3 ml-16 rounded-lg bg-[#E527B2] text-white font-medium">Make Purchase</button>
+                    <button class="py-2 px-5 mt-3 ml-16 rounded-lg bg-[#E527B2] text-white font-medium" onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_1" class="modal text-center items-center">
+                        <form method="dialog" class="modal-box">
+                          <img class="ml-36" src="./images/congo.png" alt="">
+                          <h3 class="text-4xl font-semibold">Congratulations</h3>
+                          <p class="py-4">Your Purchase the product</p>
+                          <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn mr-44 py-2 px-5 mt-3 ml-16 rounded-lg bg-[#E527B2] text-white font-medium">Go Home</button>
+                          </div>
+                        </form>
+                      </dialog>
                 </div>
                </div>
             </div>
