@@ -24,7 +24,7 @@ document.getElementById('apply-btn').addEventListener('click',function(){
         setElementValueById('discount-amount',totalDiscountAmount)
         setElementValueById('total-amount', totalAmount);
     }else{
-        alert('wrong coupon code');
+        alert('wrong coupon code!!!');
     }
 });
 
