@@ -10,7 +10,9 @@
     <!-- daisy link here  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
+<style>
 
+</style>
 <body>
     <header>
         <!-- banner section here  -->
@@ -205,20 +207,21 @@
             <div class="w-full md:w-full lg:w-1/4 mt-16">
                 <div class="shadow-md p-3">
                     <h3 class="font-medium mb-3">Have coupon?</h3>
-                    <input type="text" placeholder="Coupon code" name="" class="rounded-tl-lg rounded-bl-lg px-2 py-2 inline border w-40" id="">
-                    <button class="py-2 px-4 rounded-tr-lg rounded-br-lg -ml-2 bg-[#E527B2] text-white font-medium">Apply</button>
+                    <input type="text" placeholder="Coupon code" name="" class="rounded-tl-lg rounded-bl-lg px-2 py-2 inline border w-40" id="input-field">
+                    <!-- <button id="apply-btn" class="py-2 px-4 rounded-tr-lg rounded-br-lg -ml-2 bg-[#E527B2] text-white font-medium">Apply</button> -->
+                    <button class="btn btn-active btn-secondary text-white -ml-2 rounded-none rounded-tr-lg rounded-br-lg" id="apply-btn" disabled>Apply</button>
                 </div>
                <div class="shadow-md p-4 mt-8">
                 <div class="mb-3" id="buying-product-titles">
 
                 </div>
                 <hr>
-                <div class="mt-3">
+                <div class="mt-3 ">
                     <p class="font-medium">Total price: <span id="total-price" class="font-extralight">00.00</span><span class="font-extralight">TK</span></p>
                     <p class="font-medium">Discount: <span id="discount-amount" class="font-extralight">00.00</span><span class="font-extralight">TK</span></p>
-                    <p class="font-medium">Total: <span id="total-amount" class="font-extralight">00.00</span><span class="font-extralight">TK</span></p>
+                    <p class="font-medium pb-3">Total: <span id="total-amount" class="font-extralight">00.00</span><span class="font-extralight">TK</span></p>
                     <hr>
-                    <button class="py-2 px-5 mt-3 ml-16 rounded-lg bg-[#E527B2] text-white font-medium" onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <button onclick="my_modal_1.showModal()" class="btn btn-secondary mt-4 px-24 text-white" id="purchase-btn" disabled>Make Purchase</button>
                     <dialog id="my_modal_1" class="modal text-center items-center">
                         <form method="dialog" class="modal-box">
                           <img class="ml-36" src="./images/congo.png" alt="">
@@ -226,7 +229,7 @@
                           <p class="py-4">Your Purchase the product</p>
                           <div class="modal-action">
                             <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn mr-44 py-2 px-5 mt-3 ml-16 rounded-lg bg-[#E527B2] text-white font-medium">Go Home</button>
+                            <button onclick="document.location.reload()" class="btn mr-44 py-2 px-5 mt-3 ml-16 rounded-lg bg-[#E527B2] text-white font-medium">Go Home</button>
                           </div>
                         </form>
                       </dialog>

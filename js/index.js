@@ -80,3 +80,4 @@ document.getElementById('card-9').addEventListener('click',function(){
     setBuyingProductTitle('buying-product-titles', 'card-9-title');    
 });
 
+
